@@ -1,4 +1,4 @@
-"""textUtils URL Configuration
+"""exercise1 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,21 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .import views
-
-#urlpatterns = [
- #   path('admin/', admin.site.urls),
-  #  path('',views.index,name='index'),
-   # path('about',views.about,name='about')
-#]
+from . import views
 
 urlpatterns = [
-   path('admin/', admin.site.urls),
-   path('',views.index,name='index'),
-   path('removepunc',views.removepunc,name='rempun'),
-   path('capitalizefirst',views.capfirst,name='capfirst'),
-   path('newlineremove',views.newlineremove,name='newlineremove'),
-   path('spaceremove',views.spaceremove,name='spaceremove'),
-   path('charcount',views.charcount,name='charcount')
-   
+    path('admin/', admin.site.urls),
+    path('',views.index,name='index'),
+    path('',views.yt,name='yt'),
+    path('',views.fb,name='fb'),
+    path('',views.instagram,name='instagram'),
+    path('',views.bootstrap,name='bootstrap')
 ]
