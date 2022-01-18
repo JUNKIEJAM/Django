@@ -14,6 +14,8 @@ def index(request):
     #return HttpResponse("Home")
 
 def removepunc(request):
+    djtext=request.GET.get('text','default')
+    print(djtext)
     return HttpResponse("remove punc")
 
 def capfirst(request):
